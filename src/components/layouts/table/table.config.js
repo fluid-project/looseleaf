@@ -3,11 +3,13 @@ module.exports = {
     status: "wip",
     context: {
         caption: "Members of the party.",
-        headers: {
+        captionSide: "top",
+        columnHeaders: {
             "name": "Name",
             "email": "E-mail",
             "role": "Role"
         },
+        rowHeaders: {},
         records: [
             {
                 "name": "Bilbo Baggins",
@@ -25,5 +27,14 @@ module.exports = {
                 "role": "Fighter"
             }
         ]
-    }
+    },
+    variants: [
+        {
+            name: "bottom-caption",
+            label: "Bottom caption",
+            context: {
+                captionSide: "bottom"
+            }
+        }
+    ]
 };
