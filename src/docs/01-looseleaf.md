@@ -38,6 +38,7 @@ Some techniques in Looseleaf are inspired by prior work:
 - [Native Elements](http://native-elements.dev/)
 - [tacit](https://yegor256.github.io/tacit/)
 - [Tailwind CSS Typography](https://tailwindcss-typography.netlify.app/)
+- [Under-Engineered Responsive Tables](https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html)
 
 ## Alternatives
 
