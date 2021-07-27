@@ -1,9 +1,9 @@
 <div role="region" aria-labelledby="table-caption" tabindex="0">
-    <table>
-        <caption id="table-caption"{% if captionSide === "bottom" %} class="caption--bottom"{% endif %}>{{ caption }}</caption>
+    <table {% if captionSide === "bottom" %} class="caption--bottom"{% endif %}>
+        <caption id="table-caption">{{ caption }}</caption>
         <thead>
             <tr>
-                {% for key, header in columnHeaders -%}
+                {% for header in columnHeaders -%}
                 <th>{{ header }}</th>
                 {%- endfor %}
             </tr>
@@ -11,12 +11,14 @@
         <tbody>
             {% for record in records -%}
             <tr>
-                {% for key, header in columnHeaders -%}
-                <td>{{ record[key] }}</td>
+                {%- if rowHeaders[loop.index0] %}
+                <th scope="row">{{ rowHeaders[loop.index0] }}</th>
+                {%- endif %}
+                {% for column in record -%}
+                <td>{{ column }}</td>
                 {%- endfor %}
             </tr>
             {%- endfor %}
-            <tr></tr>
         </tbody>
     </table>
 </div>

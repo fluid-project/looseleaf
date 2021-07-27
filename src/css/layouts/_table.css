@@ -20,21 +20,22 @@ caption {
     caption-side: top;
     font-size: var(--step--1);
     font-style: italic;
+    margin: 0 0 var(--step--3);
     text-align: center;
 }
 
-caption.caption--bottom {
+.caption--bottom caption {
     caption-side: bottom;
-    margin-block-start: var(--step-0);
+    margin: var(--step-0) 0 0;
 }
 
 th {
     padding: var(--step--3);
-    text-align: start;
 }
 
 td {
     padding: var(--step--3);
+    text-align: center;
 }
 
 tbody tr:nth-child(odd) {
