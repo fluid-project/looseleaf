@@ -3,6 +3,7 @@
         {% if caption -%}
         <caption id="table-caption">{{ caption }}</caption>
         {%- endif -%}
+        {% if columnHeaders.length > 0 %}
         <thead>
             <tr>
                 {% for header in columnHeaders -%}
@@ -10,6 +11,7 @@
                 {%- endfor %}
             </tr>
         </thead>
+        {% endif %}
         <tbody>
             {% for record in records -%}
             <tr>
