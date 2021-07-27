@@ -1,6 +1,8 @@
-<div role="region" aria-labelledby="table-caption" tabindex="0">
-    <table {% if captionSide === "bottom" %} class="caption--bottom"{% endif %}>
+<div role="region" {% if caption %}aria-labelledby="table-caption" {% else %}aria-label="table" {% endif %}tabindex="0">
+    <table {% if caption and captionSide === "bottom" %} class="caption--bottom"{% endif %}>
+        {% if caption -%}
         <caption id="table-caption">{{ caption }}</caption>
+        {%- endif -%}
         <thead>
             <tr>
                 {% for header in columnHeaders -%}
