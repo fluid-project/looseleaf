@@ -1,6 +1,6 @@
 module.exports = {
     order: 6,
-    status: "wip",
+    status: "ready",
     context: {
         caption: "Members of the party.",
         captionSide: "top",
@@ -31,14 +31,14 @@ module.exports = {
     variants: [
         {
             name: "bottom-caption",
-            label: "Bottom Caption",
+            label: "Table with Bottom Caption",
             context: {
                 captionSide: "bottom"
             }
         },
         {
             name: "row-headers",
-            label: "Row Headers",
+            label: "Table with Row Headers",
             context: {
                 caption: "First quarter revenue and expenses.",
                 captionSide: "top",
@@ -61,8 +61,8 @@ module.exports = {
                     ],
                     [
                         "2100.00",
-                        "1675.00",
-                        "425.00"
+                        "1550.00",
+                        "550.00"
                     ],
                     [
                         "2250.00",
