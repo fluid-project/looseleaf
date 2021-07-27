@@ -1,0 +1,22 @@
+<div role="region" aria-labelledby="table-caption" tabindex="0">
+    <table>
+        <caption id="table-caption">{{ caption }}</caption>
+        <thead>
+            <tr>
+                {% for key, header in headers -%}
+                <th>{{ header }}</th>
+                {%- endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in records -%}
+            <tr>
+                {% for key, header in headers -%}
+                <td>{{ record[key] }}</td>
+                {%- endfor %}
+            </tr>
+            {%- endfor %}
+            <tr></tr>
+        </tbody>
+    </table>
+</div>

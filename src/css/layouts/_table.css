@@ -1,0 +1,36 @@
+[role="region"][aria-labelledby][tabindex] {
+    border: var(--ll-border-medium);
+    border-color: transparent;
+    border-radius: var(--ll-border-radius);
+    overflow: auto;
+    padding-block-start: var(--step--3);
+}
+
+[role="region"][aria-labelledby][tabindex]:focus {
+    border-color: var(--ll-accent-color);
+    outline: none;
+}
+
+table {
+    border: 0;
+    width: 100%;
+}
+
+caption {
+    font-size: var(--step--1);
+    font-style: italic;
+    text-align: center;
+}
+
+th {
+    padding: var(--step--3);
+    text-align: start;
+}
+
+td {
+    padding: var(--step--3);
+}
+
+tbody tr:nth-child(odd) {
+    background: var(--ll-accent-background-color);
+}
