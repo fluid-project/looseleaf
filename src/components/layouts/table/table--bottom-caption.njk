@@ -1,8 +1,4 @@
-{% render '@paragraph' %}
 <figure tabindex="0">
-    {% if caption -%}
-    <figcaption>{{ caption }}</figcaption>
-    {%- endif -%}
     <table>
         {% if columnHeaders.length > 0 %}
         <thead>
@@ -26,5 +22,7 @@
             {%- endfor %}
         </tbody>
     </table>
+    {% if caption -%}
+    <figcaption>{{ caption }}</figcaption>
+    {%- endif -%}
 </figure>
-{% render '@paragraph' %}
