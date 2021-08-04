@@ -2,6 +2,7 @@ module.exports = {
     order: 6,
     status: "ready",
     context: {
+        label: "Our Party",
         caption: "Members of the party.",
         captionSide: "top",
         columnHeaders: [
@@ -40,6 +41,7 @@ module.exports = {
             name: "row-headers",
             label: "Table with Row Headers",
             context: {
+                label: "Q1 Results",
                 caption: "First quarter revenue and expenses.",
                 captionSide: "top",
                 columnHeaders: [

@@ -1,4 +1,4 @@
-<div role="region" tabindex="0" aria-labelledby="table-caption">
+<div role="region" tabindex="0" aria-label="{{ label }}" aria-describedby="table-caption">
     <table{% if captionSide === 'bottom'%} data-caption="bottom"{% endif %}>
         {% if caption -%}
         <caption id="table-caption">{{ caption }}</caption>
