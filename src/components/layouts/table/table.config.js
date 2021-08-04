@@ -31,7 +31,10 @@ module.exports = {
     variants: [
         {
             name: "bottom-caption",
-            label: "Table with Bottom Caption"
+            label: "Table with Bottom Caption",
+            context: {
+                captionSide: "bottom"
+            }
         },
         {
             name: "row-headers",
