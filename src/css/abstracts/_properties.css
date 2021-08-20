@@ -124,6 +124,24 @@
     */
     --ll-border-thick: 0.1875rem solid var(--ll-border-color);
 
+    /* doxray
+    label: border-dashed-thin
+    description: Looseleaf's thin dashed border has a `border-width` equivalent to 1px.
+    */
+    --ll-border-dashed-thin: 0.0625rem dashed var(--ll-border-color);
+
+    /* doxray
+    label: border-dashed-medium
+    description: Looseleaf's medium dashed border has a `border-width` equivalent to 2px.
+    */
+    --ll-border-dashed-medium: 0.125rem dashed var(--ll-border-color);
+
+    /* doxray
+    label: border-dashed-thick
+    description: Looseleaf's thick dashed border has a `border-width` equivalent to 3px.
+    */
+    --ll-border-dashed-thick: 0.1875rem dashed var(--ll-border-color);
+
     /* ignore-doxray */
     --fluid-min-width: 320;
     --fluid-max-width: 1140;
