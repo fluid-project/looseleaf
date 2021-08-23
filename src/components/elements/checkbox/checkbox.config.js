@@ -5,6 +5,7 @@ module.exports = {
         name: "remember",
         id: false,
         label: "Remember me",
+        ariaDescribedby: false,
         hint: false,
         error: false
     },

@@ -10,7 +10,7 @@
 {% endif %}
 
 <div class="field{% if error %} field--error{% endif %}">
-    <input type="checkbox" id="{{ id if id else name }}" name="{{ name }}"{% if value %} value="{{ value }}"{% endif %}{% if ariaDescribedby != '' %} aria-describedby="{{ ariaDescribedby }}"{% endif %} />
+    <input type="checkbox" id="{{ id if id else name }}" name="{{ name }}"{% if value %} value="{{ value }}"{% endif %}{% if ariaDescribedby and ariaDescribedby != '' %} aria-describedby="{{ ariaDescribedby }}"{% endif %} />
     <label for="{{ id if id else name }}">{{ label }}</label>
     {%- if hint %}
     {% render '@hint', { name: name, content: hint } %}
