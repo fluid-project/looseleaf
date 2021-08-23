@@ -45,3 +45,20 @@ input[type="checkbox"]:checked + label::after {
     transform: rotate(45deg);
     width: var(--step--4);
 }
+
+.field--error input[type="checkbox"] + label::before {
+    border-color: var(--ll-text-color-error);
+}
+
+.field--error input[type="checkbox"]:focus + label::before {
+    box-shadow: var(--ll-input-focus-box-shadow-error);
+}
+
+.field--error input[type="checkbox"]:active + label::before {
+    box-shadow: var(--ll-input-focus-box-shadow-error);
+}
+
+.field--error input[type="checkbox"]:checked + label::after {
+    border-bottom-color: var(--ll-text-color-error);
+    border-right-color: var(--ll-text-color-error);
+}
