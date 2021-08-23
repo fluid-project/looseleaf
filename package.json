@@ -1,5 +1,5 @@
 {
-  "name": "@accessibility-in-action/looseleaf",
+  "name": "loose-leaf",
   "version": "1.5.0",
   "description": "Sketchy CSS framework for prototyping.",
   "main": "dist/style.min.css",
