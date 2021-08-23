@@ -20,8 +20,10 @@ module.exports = {
                 hint: "Please choose a flavour of ice cream."
             }
         },
-        {name: "error",
+        {
+            name: "error",
             context: {
+                default: false,
                 error: "You must choose a flavour."
             }
         }
