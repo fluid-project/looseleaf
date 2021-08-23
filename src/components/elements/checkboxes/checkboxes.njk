@@ -13,7 +13,7 @@
     {% render '@hint', { name: name, content: hint } %}
     {%- endif %}
     {%- for value, label in options -%}
-    {%- render '@checkbox', {name: name, id: name + '-' + value, value: value, label: label, ariaDescribedby: ariaDescribedby, hint: false, error: false}, true -%}
+    {%- render '@checkbox', {name: name, id: name + '-' + value, value: value, label: label, ariaDescribedby: ariaDescribedby, hint: false, error: false, invalid: true}, true -%}
     {%- endfor -%}
     {%- if error %}
     {% render '@error', { name: name, content: error } %}

@@ -7,7 +7,8 @@ module.exports = {
         label: "Remember me",
         ariaDescribedby: false,
         hint: false,
-        error: false
+        error: false,
+        invalid: false
     },
     variants: [
         {

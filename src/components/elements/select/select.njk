@@ -9,7 +9,7 @@
 
 <div class="field{% if error %} field--error{% endif %}">
     <label for="{{ name }}">{{ label }}</label>
-    <select id="{{ id if id else name }}" name="{{ name }}" {% if ariaDescribedby != '' %}aria-describedby="{{ ariaDescribedby }}" {% endif %}>
+    <select id="{{ id if id else name }}" name="{{ name }}" {% if ariaDescribedby != '' %}aria-describedby="{{ ariaDescribedby }}" {% endif %}{% if error %} aria-invalid="true"{% endif %}>
         {%- for value, label in options -%}
         <option value="{{ value }}"{% if default == value %} selected{% endif %}>{{ label }}</option>
         {%- endfor -%}

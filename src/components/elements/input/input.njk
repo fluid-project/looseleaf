@@ -9,7 +9,7 @@
 
 <div class="field{% if error %} field--error{% endif %}">
     <label for="{{ name }}">{{ label }}</label>
-    <input type="{{ type }}" id="{{ id if id else name }}" name="{{ name }}" {% if ariaDescribedby != '' %}aria-describedby="{{ ariaDescribedby }}" {% endif %} />
+    <input type="{{ type }}" id="{{ id if id else name }}" name="{{ name }}" {% if ariaDescribedby != '' %}aria-describedby="{{ ariaDescribedby }}" {% endif %}{% if error %} aria-invalid="true"{% endif %}  />
     {%- if hint %}
     {% render '@hint', { name: name, content: hint } %}
     {%- endif %}

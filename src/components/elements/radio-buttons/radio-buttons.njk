@@ -14,7 +14,7 @@
     {%- endif %}
     {%- for value, label in options -%}
     <div class="field">
-        <input type="radio" id="{{ name }}-{{ value }}" name="{{ name }}" value="{{ value }}" {% if ariaDescribedby != '' %}aria-describedby="{{ ariaDescribedby }}" {% endif %}{% if default == value %} checked{% endif %}/>
+        <input type="radio" id="{{ name }}-{{ value }}" name="{{ name }}" value="{{ value }}" {% if ariaDescribedby != '' %}aria-describedby="{{ ariaDescribedby }}" {% endif %}{% if error %} aria-invalid="true"{% endif %} {% if default == value %} checked{% endif %}/>
         <label for="{{ name }}-{{ value }}">{{ label }}</label>
     </div>
     {%- endfor -%}
