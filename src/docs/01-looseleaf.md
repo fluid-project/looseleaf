@@ -1,6 +1,6 @@
 [![Deployed with Netlify](https://badgen.net/badge/deployed/with%20netlify/cyan)](https://looseleaf.netlify.app)
-[![License](https://badgen.net/github/license/accessibility-in-action/looseleaf)](https://github.com/accessibility-in-action/looseleaf/blob/main/LICENSE.md)
-[![GitHub Release](https://badgen.net/github/release/accessibility-in-action/looseleaf)](https://github.com/accessibility-in-action/looseleaf/releases/latest)
+[![License](https://badgen.net/github/license/accessibility-in-action/looseleaf)](https://github.com/fluid-project/loose-leaf/blob/main/LICENSE.md)
+[![GitHub Release](https://badgen.net/github/release/accessibility-in-action/looseleaf)](https://github.com/fluid-project/loose-leaf/releases/latest)
 [![NPM Package](https://badgen.net/npm/v/@accessibility-in-action/looseleaf)](https://npmjs.com/package/@accessibility-in-action/looseleaf)
 
 Looseleaf is a sketchy CSS framework for prototyping. Wherever possible, it is a
@@ -10,7 +10,7 @@ exceptions, most of which are found in the _Utilities_ section.)
 
 ## License
 
-Looseleaf is released under the [BSD 3-Clause license](https://github.com/accessibility-in-action/looseleaf/blob/main/LICENSE.md).
+Looseleaf is released under the [BSD 3-Clause license](https://github.com/fluid-project/loose-leaf/blob/main/LICENSE.md).
 
 ## Third-Party software in Looseleaf
 
@@ -31,7 +31,7 @@ under a [CC-BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Credits
 
-Looseleaf is created and maintained by our [contributors](https://github.com/accessibility-in-action/looseleaf/graphs/contributors).
+Looseleaf is created and maintained by our [contributors](https://github.com/fluid-project/loose-leaf/graphs/contributors).
 
 Some techniques in Looseleaf are inspired by prior work:
 
