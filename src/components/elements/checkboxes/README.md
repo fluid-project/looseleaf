@@ -3,7 +3,6 @@
 A group of checkboxes is wrapped in a `fieldset` with a `legend` which names
 the input group. This technique is derived from WebAIM's article,
 [_Accessible Form Controls_](https://webaim.org/techniques/forms/controls#checkbox).
-https://webaim.org/techniques/forms/controls#radio
 
 A hint for the group can be added immediately after the `<legend>` in a
 paragraph with a class of `field__hint`.
