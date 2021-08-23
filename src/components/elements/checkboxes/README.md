@@ -12,4 +12,4 @@ checkbox in a paragraph with a class of `field__error`.
 
 Hints and validation error messages must be associated with the checkbox using
 unique IDs which can be referenced from the checkboxes' `aria-describedby`
-attributes. For more information, see [here](https://webaim.org/techniques/formvalidation/#error).
+attributes. For more information, see [WebAIM's form validation error documentation](https://webaim.org/techniques/formvalidation/#error).
